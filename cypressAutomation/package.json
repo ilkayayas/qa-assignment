@@ -1,0 +1,21 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'Use npm run cypress:run' && exit 1",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "report:merge": "mochawesome-merge cypress/results/*.json > cypress/results/report.json",
+    "report:generate": "marge cypress/results/report.json -f report -o cypress/results"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cypress": "^15.2.0",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
+  }
+}

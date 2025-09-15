@@ -1,0 +1,11 @@
+[run]
+branch = True
+source =
+	main.py
+omit =
+	seed_data.py
+
+[report]
+show_missing = True
+skip_covered = True
+
